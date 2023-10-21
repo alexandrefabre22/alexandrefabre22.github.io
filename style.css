@@ -1,0 +1,157 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+	/* url('https://via.placeholder.com/1200x400.png' */
+    background-image: url('https://via.placeholder.com/1200x400.png'); /* Image d'en-tête */
+	/*width: 1200px;*/ /* Largeur de l'image */
+    /*height: 400px;*/ /* Hauteur de l'image */
+    overflow: hidden; /* Masquer le contenu en dehors des dimensions définies */
+        
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+}
+
+.header-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 24px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Styles pour la section Réalisations (sans animation) */
+.achievements {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.achievement {
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.achievement img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.achievement h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.achievement p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Styles pour la section Choix du Niveau */
+.level-selection {
+    background-color: #f2f2f2; /* Couleur de fond gris clair */
+    text-align: center;
+    padding: 40px 0;
+    border: 2px solid #ccc; /* Cadre autour de la section gris clair */
+    border-radius: 10px; /* Coins arrondis */
+    margin: 20px;
+}
+
+.select-container {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ccc; /* Bordure autour de la liste de choix gris clair */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 5px;
+}
+
+#level-select {
+    font-size: 18px;
+    padding: 10px;
+    border: none; /* Supprimer la bordure d'origine de la liste de choix */
+    background-color: #f2f2f2; /* Couleur de fond gris clair */
+    color: #333; /* Couleur de texte gris foncé */
+}
+
+.level-content {
+    margin-top: 20px;
+    display: none;
+    text-align: center; /* Centrer le texte */
+}
+
+.level-content p {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0 20px; /* Ajouter un espacement des marges gauche et droite */
+    color: #333; /* Couleur de texte gris foncé */
+}
+
+
+.contact {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contact a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Styles spécifiques pour les liens */
+a:hover {
+    text-decoration: underline;
+}
