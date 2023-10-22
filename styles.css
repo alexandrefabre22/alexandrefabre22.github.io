@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #f2f2f2; /* Gris clair */
     color: #333;
     line-height: 1.6;
 }
@@ -19,12 +19,7 @@ body {
 }
 
 .header {
-	/* url('https://via.placeholder.com/1200x400.png' */
-    background-image: url('https://via.placeholder.com/1200x400.png'); /* Image d'en-tête */
-	/*width: 1200px;*/ /* Largeur de l'image */
-    /*height: 400px;*/ /* Hauteur de l'image */
-    overflow: hidden; /* Masquer le contenu en dehors des dimensions définies */
-        
+    background-image: url('https://via.placeholder.com/1200x400.png');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -94,43 +89,41 @@ body {
 
 /* Styles pour la section Choix du Niveau */
 .level-selection {
-    background-color: #f2f2f2; /* Couleur de fond gris clair */
+    background-color: #f2f2f2; /* Gris clair */
     text-align: center;
     padding: 40px 0;
-    border: 2px solid #ccc; /* Cadre autour de la section gris clair */
-    border-radius: 10px; /* Coins arrondis */
+    border: 2px solid #ccc; /* Bordure gris clair */
+    border-radius: 10px;
     margin: 20px;
 }
 
 .select-container {
     display: inline-block;
-    background-color: #fff;
-    border: 1px solid #ccc; /* Bordure autour de la liste de choix gris clair */
-    border-radius: 5px; /* Coins arrondis */
+    background-color: #fff; /* Blanc */
+    border: 1px solid #ccc; /* Bordure gris clair */
+    border-radius: 5px;
     padding: 5px;
 }
 
 #level-select {
     font-size: 18px;
     padding: 10px;
-    border: none; /* Supprimer la bordure d'origine de la liste de choix */
-    background-color: #f2f2f2; /* Couleur de fond gris clair */
-    color: #333; /* Couleur de texte gris foncé */
+    border: none;
+    background-color: #f2f2f2; /* Gris clair */
+    color: #333;
 }
 
 .level-content {
     margin-top: 20px;
-    display: none;
-    text-align: center; /* Centrer le texte */
+    text-align: center;
 }
 
 .level-content p {
     font-size: 18px;
     margin: 10px 0;
-    padding: 0 20px; /* Ajouter un espacement des marges gauche et droite */
-    color: #333; /* Couleur de texte gris foncé */
+    padding: 0 20px;
+    color: #333;
 }
-
 
 .contact {
     background-color: #f7f7f7;
@@ -154,4 +147,37 @@ footer {
 /* Styles spécifiques pour les liens */
 a:hover {
     text-decoration: underline;
+}
+
+/* Styles pour la section À Propos */
+.about-section {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.about-section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.about-section a:hover {
+    background-color: #0056b3;
 }
