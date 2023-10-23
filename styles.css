@@ -38,7 +38,96 @@ body {
     font-size: 24px;
 }
 
-.section {
+/* Styles pour le tableau des cellules */
+.table {
+    display: table;
+    width: 95%;
+	margin : auto auto
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.cell {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 10px; /* Espace ajouté entre les cellules */
+}
+
+.box-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.box-content {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Styles pour le lien "En savoir plus" */
+.en-savoir-plus a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.en-savoir-plus a:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour la section "En détails" */
+.details {
+}
+
+/* Styles pour la section "Interventions" */
+.interventions {
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.intervention {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px; /* Espace ajouté entre les cellules */
+}
+
+.intervention img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.intervention h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.intervention p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Styles pour la section "Cours proposés" */
+.cours-proposes {
     background-color: #fff;
     padding: 20px;
     margin: 20px 0;
@@ -46,9 +135,31 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.section-title {
+.cours-proposes h2 {
     font-size: 32px;
     margin-bottom: 20px;
+}
+
+/* Styles pour la section "Contact" */
+.section-contact {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour le pied de page */
+.footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .services-list {
@@ -56,7 +167,101 @@ body {
     margin-left: 20px;
 }
 
-/* Styles pour la section Réalisations (sans animation) */
+/* CSS pour la structure en tableau */
+.cell {
+    display: table-cell;
+    vertical-align: top;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.cell.left-box {
+    width: 50%;
+}
+
+.box-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* Style de la liste déroulante personnalisée */
+/* Styles pour personnaliser le conteneur de la liste déroulante */
+.select-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Blanc */
+    border: 1px solid #ccc; /* Bordure gris clair */
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.select-container select {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2; /* Gris clair */
+    color: #333;
+}
+
+
+/* Flèche déroulante stylée */
+.select-container::after {
+    content: '\25BC'; /* Flèche vers le bas */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Style au survol */
+.select-container:hover {
+    background-color: #f2f2f2;
+}
+
+
+#level-select {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #333;
+    width: 100%;
+}
+
+.level-content {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0 20px;
+    color: #333;
+}
+
+.link-container {
+    text-align: center;
+    margin: 20px auto; /* Centre horizontalement et ajoute un espace en haut et en bas */
+    max-width: 50%; /* Le conteneur prendra au maximum 50% de la largeur du parent */
+    width: 100%; /* Le conteneur prendra toute la largeur disponible */
+}
+
+
+.link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.link:hover {
+    background-color: #0056b3;
+}
+
 .achievements {
     background-color: #f7f7f7;
     text-align: center;
@@ -74,6 +279,7 @@ body {
 
 .achievement img {
     max-width: 100%;
+	max-height: 500px;
     border-radius: 10px;
 }
 
@@ -87,144 +293,26 @@ body {
     margin: 10px 0;
 }
 
-/* Styles pour la section Choix du Niveau */
-.level-selection {
-    background-color: #f2f2f2; /* Gris clair */
-    text-align: center;
-    padding: 40px 0;
-    border: 2px solid #ccc; /* Bordure gris clair */
-    border-radius: 10px;
-    margin: 20px;
+div.presentation{
+	flex: 2;
 }
 
-.select-container {
-    display: inline-block;
-    background-color: #fff; /* Blanc */
-    border: 1px solid #ccc; /* Bordure gris clair */
-    border-radius: 5px;
-    padding: 5px;
+div.pedagogy{
+	flex: 3;
 }
 
-#level-select {
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background-color: #f2f2f2; /* Gris clair */
-    color: #333;
+div.presentation{
+	flex: 2;
 }
 
-.level-content {
-    margin-top: 20px;
-    text-align: center;
+div.pedagogy{
+	flex: 3;
 }
 
-.level-content p {
-    font-size: 18px;
-    margin: 10px 0;
-    padding: 0 20px;
-    color: #333;
+div.lesson{
+	flex: 3;
 }
 
-.level-links {
-    margin-top: 30px;
-}
-
-.level-links p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.level-links ul {
-    list-style: none;
-}
-
-.level-links ul li {
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 18px;
-}
-
-.level-links a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.level-links a:hover {
-    text-decoration: underline;
-}
-
-/* Styles pour la section À Propos */
-.about-section {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.about-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.about-section p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-/* Styles pour la section "Ressources pour l'Éducation" */
-.education-resources {
-    background-color: #f9f9f9; /* Couleur de fond légèrement grise */
-    padding: 40px 0;
-    text-align: center;
-}
-
-.education-resources .section-title {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #333; /* Couleur de texte légèrement grise */
-}
-
-.education-resources p {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #333; /* Couleur de texte légèrement grise */
-}
-
-.education-resources a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.education-resources a:hover {
-    background-color: #0056b3;
-}
-
-
-.about-section a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.about-section a:hover {
-    background-color: #0056b3;
-}
-
-footer {
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+div.contact{
+	flex: 2;
 }

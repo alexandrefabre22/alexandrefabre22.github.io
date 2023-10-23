@@ -1,3 +1,16 @@
+
+function scrollToAbout() {
+    const aboutSection = document.getElementById("about-section");
+    
+    if (aboutSection) {
+        window.scrollTo({
+            top: aboutSection.offsetTop,
+            behavior: 'smooth' // Cette option ajoute une animation de défilement
+        });
+    }
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     var levelSelect = document.getElementById("level-select");
     var levelContent = document.getElementById("level-content");
@@ -67,4 +80,55 @@ document.addEventListener("DOMContentLoaded", function () {
     var defaultLevel = 'cm1'; // Niveau par défaut
     levelSelect.value = defaultLevel; // Définir l'option par défaut
     showLevelContent(defaultLevel); // Afficher le contenu correspondant
+	
+	
+	
+		// Sélectionnez le conteneur du diagramme
+	const svg = d3.select("#pedagogy-diagram")
+	   .append("svg")
+	   .attr("width", 600)  // Largeur du diagramme
+	   .attr("height", 400); // Hauteur du diagramme
+
+	// Définissez les nœuds
+	const nodes = [
+	   { name: "Nœud 1" },
+	   { name: "Nœud 2" },
+	   { name: "Nœud 3" }
+	];
+
+	// Définissez les arêtes (liens entre les nœuds)
+	const links = [
+	   { source: 0, target: 1 },
+	   { source: 1, target: 2 }
+	];
+
+	// Créez les arêtes
+	const link = svg.selectAll(".link")
+	   .data(links)
+	   .enter()
+	   .append("line")
+	   .attr("class", "link");
+
+	// Créez les nœuds
+	const node = svg.selectAll(".node")
+	   .data(nodes)
+	   .enter()
+	   .append("g")
+	   .attr("class", "node")
+	   .attr("transform", (d, i) => `translate(${i * 200 + 100}, 200)`); // Positionnez les nœuds horizontalement
+
+	// Ajoutez un cercle à chaque nœud
+	node.append("circle")
+	   .attr("r", 20) // Rayon du cercle
+
+	// Ajoutez le nom à chaque nœud
+	node.append("text")
+	   .attr("dy", -30) // Décalage vertical du texte
+	   .attr("text-anchor", "middle")
+	   .text(d => d.name);
+
+	
+	
+	
 });
+

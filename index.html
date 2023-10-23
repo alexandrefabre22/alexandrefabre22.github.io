@@ -6,39 +6,52 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="animations.css">
     <script src="script.js"></script>
-    <title>Votre Nom - Interventions en Intelligence Artificielle</title>
+    <title>Alexandre Fabre - Interventions en Intelligence Artificielle</title>
 </head>
 <body>
     <!-- En-tête -->
     <header class="header">
         <div class="container">
-            <h1 class="header-title">Intelligence Artificielle</h1>
-            <p class="tagline">Découvrez le futur de l'éducation</p>
+            <h1 class="header-title">Intervention en Intelligence Artificielle</h1>
+            <p class="tagline">Appréhender le monde d'aujourd'hui et demain</p>
         </div>
     </header>
 
     <!-- Section Présentation -->
-    <div class="container">
-        <section class="section">
-            <h2 class="section-title">Présentation</h2>
-            <p>Explorez les possibilités de l'intelligence artificielle et de l'apprentissage machine. Nos interventions éducatives transforment l'enseignement en une expérience interactive et passionnante.</p>
-        </section>
+	<div class="container">
+		<section class="section-presentation section" id="presentation">
+			<h2 class="section-title">Présentation</h2>
+			<!--- Donner du sens aux apprentissages - -->
+			<p>
+				Je peux intervenir auprès d'élèves de CM1Mes interventions sont adaptées à des niveaux allant du <b>CM1 à la terminale</b>.
+			</p>
+			<br>
+			<p>
+				Ancien professeur des écoles, ayant également enseigné au collège et sensibilisé
+				des enseignants de lycée à l'intelligence artificielle, je souhaite mettre à profit
+				mes compétences sur le sujet par le biais d'interventions ludiques et d'applications
+				concrètes. Les activités proposées se veulent au plus près des notions étudiées
+				pendant l'année, que cela soit en Mathématiques, en Science, en Économie ou en EMC.
+			</p>
+			<!-- Lien pour défilement animé vers À Propos -->
+			<br>
+			<a href="javascript:void(0);" onclick="scrollToAbout()">En savoir plus sur l'intervenant</a>
+		</section>
 
         <!-- Section Services -->
         <section class="section services">
-            <h2 class="section-title">Nos Services</h2>
+            <h2 class="section-title">Interventions</h2>
             <ul class="services-list">
-                <li>Ateliers interactifs sur l'intelligence artificielle</li>
-                <li>Projets éducatifs personnalisés liés à l'IA</li>
-                <li>Formation avancée pour les enseignants</li>
-                <li>Support continu pour l'intégration de l'IA dans les programmes scolaires</li>
-                <li>Conférences captivantes pour élèves et enseignants</li>
+                <li>Du CM1 au à la sixième : initiation à la logique de l'apprentissage automatique;</li>
+                <li>De la Cinquième à la Troisième : conception de classifieur simple (perceptron, arbre de décision);</li>
+                <li>De la Seconde à la terminale : initiation à l'apprentissage profond (dérivées de fonction, calcul vectoriel);</li>
+                <li>Pour chaque niveau, l'objectif est d'apporter une image concrète de ce qu'est l'IA retour réflexif.</li>
             </ul>
         </section>
 
         <!-- Section Réalisations (sans animation) -->
         <section class="achievements">
-            <h2 class="section-title">Nos Réalisations</h2>
+            <h2 class="section-title">Réalisations</h2>
             <div class="achievement">
                 <img src="images/primaire.jpg" alt="École XYZ">
                 <h3>Atelier d'Introduction à l'IA à l'École XYZ</h3>
@@ -81,7 +94,7 @@
 
 
         <!-- Section Contact -->
-        <section class="section contact">
+        <section class="section-contact section">
             <h2 class="section-title">Contactez-nous</h2>
             <p>Pour toute demande d'information ou pour planifier une intervention dans votre établissement, veuillez nous contacter :</p>
             <p>Email : <a href="mailto:contact@votrenom.com">contact@votrenom.com</a></p>
@@ -91,17 +104,19 @@
 		
 			<!-- Nouvelle section avec une classe spécifique -->
 		<section class="education-resources">
-			<h2 class="section-title">Ressources pour l'Éducation</h2>
+			<h2 class="section-title">Ressources</h2>
 			<p>Explorez des ressources utiles pour les écoles, les collèges et le lycée.</p>
 			<a href="ressources.html">Découvrir les Ressources</a>
 		</section>
 
         <!-- Section À Propos -->
-        <section class="about-section">
-            <h2 class="section-title">À Propos</h2>
-            <p>Je suis passionné par l'intelligence artificielle et l'éducation. J'interviens dans les écoles, collèges et lycées pour initier les élèves à l'IA de manière ludique. Si vous souhaitez en savoir plus sur mon parcours et mes compétences, vous pouvez consulter mon CV.</p>
-            <a href="CV.pdf" target="_blank">Voir mon CV</a>
-        </section>
+        <!-- Section À Propos -->
+		<section class="about-section" id="about-section">
+			<h2 class="section-title">À Propos</h2>
+			<p>Je suis passionné par l'intelligence artificielle et l'éducation. J'interviens dans les écoles, collèges et lycées pour initier les élèves à l'IA de manière ludique. Si vous souhaitez en savoir plus sur mon parcours et mes compétences, vous pouvez consulter mon CV.</p>
+			<a href="CV.pdf" target="_blank">Voir mon CV</a>
+		</section>
+
     </div>
 
 
